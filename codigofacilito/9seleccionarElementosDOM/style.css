@@ -1,0 +1,17 @@
+.container-red {
+    background: red;
+    padding: 10px;
+}
+
+.container-blue {
+    background: blue;
+    padding: 10px;
+}
+
+.dimen{
+    height: 250px;
+}
+
+.space{
+    margin-top: 10px;
+}

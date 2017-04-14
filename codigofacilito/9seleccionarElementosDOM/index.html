@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seleccionar elementos del DOM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>        
+        <div id="redContainer">
+
+        </div>
+        <div class="container-blue">
+
+        </div>
+        <script type="text/javascript">
+            // Buscar por id
+            var divId = document.getElementById("redContainer");
+            divId.classList.add("container-red");
+            //Buscar por 
+            var divClass = document.getElementsByClassName("container-blue");
+            divClass[0].classList.add('space');
+
+            var divTag = document.getElementsByTagName("div");
+            divTag[0].classList.add('dimen');
+            
+            // en la ultimas versiones de javascrit
+            // se utiliza como en jquery con selectores de clase, selectores de id, selectores de etiqueta
+            var divSelector = document.querySelector(".container-blue"); // querySelectorAll -> devuelve un arrya de los elementos
+            divSelector.classList.add('dimen');
+            
+            function $(selector){
+                return document.querySelector(selector);
+            }
+            
+            var divIdSelector = $('#redContainer');
+            divIdSelector.classList.add('space');
+            
+        </script>
+    </body>
+</html>

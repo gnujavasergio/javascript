@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadenas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            var nombre = "Sergio";
+            var cadena = "hola " + nombre;
+            if (nombre.indexOf("Sergio") != -1) {
+                console.log("Bienvenido Sergio");
+            } else {
+                console.log(cadena);
+            }
+            
+            console.log(nombre.indexOf("Sergio"));
+            // en un cadena cada caracter se lo puedo acceder como array;
+            console.log(nombre[0]);
+            console.log(nombre.charAt(2));
+            // Remplazar caracteres o cadenas 
+            console.log(nombre.replace("S","s"));
+            // Convertir todo a Mayusculas            
+            console.log(nombre.toUpperCase());
+            // Convertir todo a Minusculas
+            console.log(nombre.toLowerCase());
+            // Substring
+            console.log(nombre.substring(0,3));
+            console.log(nombre.slice(0,3));
+        </script>
+    </head>
+    <body>        
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Numero Magico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            var max = 100;
+            var min = 1;
+            // Numero Aletorio
+            var numberSecret = Math.random() * (max - min) + min;
+            numberSecret = parseInt(numberSecret);
+            var message = "Ingresa un número para adivinar el número mágico"
+            console.log(numberSecret);
+            while (true) {
+                // prompt retorna un string
+                var numberUser = prompt(message, "0");
+                numberUser = parseInt(numberUser);
+                if (numberUser === numberSecret) {
+                    alert("Ganaste!!! Adivinaste el numero secreto");
+                    break;
+                } else if (numberUser === 0) {
+                    break;
+                } else if (numberUser > numberSecret) {
+                    message = "Lo sentimos, el número que ingresaste es mayor al numero que ingresaste";
+                } else if (numberUser < numberSecret) {
+                    message = "Lo sentimos, el número que ingresaste es menor al numero que ingresaste";
+                }
+            }
+        </script>
+    </head>
+    <body>      
+        <p>Adivina el número secreto, y colócalo en la ventana que despliega</p>
+        <p>Para terminar el juego ingrese 0</p>
+    </body>
+</html>
