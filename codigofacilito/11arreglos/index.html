@@ -6,12 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
     </head>
-    <body>        
-        <div id="btnDiv">
-            <button id="btnAlert">Abrir un alert</button>                
-        </div>        
+    <body>           
         <script>
-            
+
+            /**
+             * new Array();
+             * new Array(20); para colocar la cantidad de elementos
+             * new Array(20,10); esto no seria una matriz sino tendria dos elementos 20 y 10
+             */
+            var strings = new Array();
+            var arrays = [20, "Hello", []]; // Es recomendable 
+
+            var number = [20, 10, 5];
+            number.pop(); //Elimina el ultimo elemento
+            number.push(7) //agregar un elemento al final del arreglo            
+
+            number.shift(); // elimina un elemento al principio
+            number.unshift(50); //Agregar un elemento al principio
+
+            console.log(number.length);
+            console.log(number);
+            var length = number.length; // Para que no pregunte cada vez en el for 
+            for(var i = 0; i < length ; i++){
+                console.log(number[i]);
+            }
         </script>
     </body>
 </html>

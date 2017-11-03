@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Funciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+
+    </head>
+    <body>                
+        <script>
+            function suma(a, b) {
+                console.log(a);
+                console.log(b);
+                b = b || 0; // esto esta en EM6 
+                return a + b;
+            }
+            var result = suma(4, 7);
+            console.log(result);
+
+            // Los parametros de la funcion pueden ser opcionales y no obligatorios
+            function resta(a, b) {
+                console.log(a);
+                console.log(b);
+                b = b || 0; // esto esta en EM6 
+                return a - b
+            }
+            
+            var resultResta = resta(5); 
+
+            console.log(resultResta);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Filter ES5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+
+    </head>
+    <body>                
+        <script>
+            var numbers = [10, 2, 5, 3, 5, 78, 64, 89];
+            var evenNumbers = [];
+            var length = numbers.length;
+            for (var i = 1; i < length; i++) {
+                var number = numbers[i];
+                if (number % 2 === 0) {
+                    evenNumbers.push(number);
+                }
+            }
+            console.log(evenNumbers);
+            
+            // Utilizando Filter
+            var evens = numbers.filter(function(number){
+                return number % 2 === 0;
+            });
+            
+            console.log(evens);
+            
+        </script>
+    </body>
+</html>
